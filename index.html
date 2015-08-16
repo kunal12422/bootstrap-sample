@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="-/style/bootstrap.css">
+    <link rel="stylesheet" href="-/style/bootstrap-responsive.css">
+    <link rel="stylesheet" href="-/style/css.css">
+
+
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="index.html" class="brand">Comapany Name</a>
+                <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="collapse nav-collapse">
+                    <form class="navbar-search pull-right">
+                        <input type="text" class="search-query" placeholder="search.."/>
+                    </form>
+                    <ul class="nav pull-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#modal-contact-form">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>  <!-- end navbar -->
+
+
+    <div class="modal hide fade" id="modal-contact-form">
+        <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h3>Contact us</h3>
+        </div>
+        <div class="modal-body">
+            <form action="" class="form-horizontal">
+                <div class="contact-group">
+                    <label for="contact-name" class="control-label">Name:</label>
+
+                    <div class="controls">
+                        <input type="text" id="contact-name"/>
+                    </div>
+                </div>
+
+                <div class="contact-group">
+                    <label for="contact-email" class="control-label">Email:</label>
+
+                    <div class="controls">
+                        <input type="email" id="contact-email"/>
+                    </div>
+                </div>
+
+                <div class="contact-group">
+                    <label for="contact-message" class="control-label">Message:</label>
+
+                    <div class="controls">
+                        <textarea id="contact-message" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <input  type="submit" class="btn btn-primary"  value="Send Message"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <a href="" data-dismiss="modal" class="btn">Cancel</a>
+        </div>
+
+    </div>
+
+
+
+<!--feature product-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="span4">
+                    <h1>Featured Product</h1>
+                    <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right</p>
+                    <div class="c-cta">
+                        <div class="btn-group">
+                            <a href="" class="btn btn-info btn-large">Buy Now</a>
+                            <a href="" class="btn btn-large">Free Trial</a>
+                        </div>
+                    </div>
+
+                    <p><a href="">Read more about the product &raquo;</a> </p>
+                </div>
+                <div class="span8">
+                    <img src="-/img/custom/tuts-hub.jpg" alt="Tut+ hub"/>
+                </div>
+            </div>
+            <hr/>
+        </div>  <!-- end container -->
+    </section>
+
+        <!-- Company Info -->
+    <div class="container">
+        <section>
+            <h3>The Company</h3>
+            <div class="row">
+                <div class="span8">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an</p>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated</p>
+                </div>
+                <div class="span4">
+                    <p class="well well-large lead text-center"> they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+        <section>
+           <h3>Testimonial</h3>
+            <div class="carousel slide" id="testimonial">
+                <ol class="carousel-indicators">
+                    <li data-target="#testimonial" data-slide-to="0" class="active"></li>
+                    <li data-target="#testimonial" data-slide-to="1"></li>
+                    <li data-target="#testimonial" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <blockquote>
+                            <p>This is Testimonail 1</p>
+                            <small>John</small>
+                        </blockquote>
+                    </div>
+
+                    <div class="item">
+                        <blockquote>
+                            <p>This is Testimonail 2</p>
+                            <small>John</small>
+                        </blockquote>
+                    </div>
+
+                    <div class="item">
+                        <blockquote>
+                            <p>This is Testimonail 3</p>
+                            <small>John</small>
+                        </blockquote>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr/>
+
+        <!-- Footer -->
+        <section>
+            <p class="lead text-center">Wanna get in touch? Email us at <a href="">office@fake.com</a> </p>
+
+            <hr/>
+            <ul class="inline text-center">
+                <li><strong>Follow us On:</strong></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+            <hr/>
+            <p class="text-center muted">&copy; Copyright 2015 Company Name</p>
+        </section>
+
+
+
+
+    </div>
+
+    <!--Javascript-->
+    <script src="-/script/jquery-2.1.3.js"></script>
+    <script src="-/script/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('.carousel').carousel({
+                interval: 2000
+            });
+        });
+    </script>
+</body>
+</html>

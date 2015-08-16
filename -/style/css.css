@@ -1,0 +1,21 @@
+body{
+    padding-top: 4em;
+}
+
+.c-cta{
+    margin: 2em;
+}
+#testimonial{
+    position: relative;
+}
+.carousel-indicators{
+    position: absolute;
+    top: -30px;
+}
+.carousel-indicators li{
+    background-color: #ccc;
+}
+
+.carousel-indicators  .active{
+    background-color: black;
+}

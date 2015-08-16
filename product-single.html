@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="-/style/bootstrap.css">
+    <link rel="stylesheet" href="-/style/bootstrap-responsive.css">
+    <link rel="stylesheet" href="-/style/css.css">
+
+
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="index.html" class="brand">Comapany Name</a>
+                <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="collapse nav-collapse">
+                    <form class="navbar-search pull-right">
+                        <input type="text" class="search-query" placeholder="search.."/>
+                    </form>
+                    <ul class="nav pull-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li  class="active"><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#modal-contact-form">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>  <!-- end navbar -->
+
+
+    <div class="modal hide fade" id="modal-contact-form">
+        <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h3>Contact us</h3>
+        </div>
+        <div class="modal-body">
+            <form action="" class="form-horizontal">
+                <div class="contact-group">
+                    <label for="contact-name" class="control-label">Name:</label>
+
+                    <div class="controls">
+                        <input type="text" id="contact-name"/>
+                    </div>
+                </div>
+
+                <div class="contact-group">
+                    <label for="contact-email" class="control-label">Email:</label>
+
+                    <div class="controls">
+                        <input type="email" id="contact-email"/>
+                    </div>
+                </div>
+
+                <div class="contact-group">
+                    <label for="contact-message" class="control-label">Message:</label>
+
+                    <div class="controls">
+                        <textarea id="contact-message" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <input  type="submit" class="btn btn-primary"  value="Send Message"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <a href="" data-dismiss="modal" class="btn">Cancel</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <!-- Page header-->
+        <section>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a><span class="divider">/</span></li>
+                <li class="active">Products</li>
+            </ul>
+            <div class="page-header">
+                <h1>Products. <small>We build amazing stuff</small></h1>
+            </div>
+
+        </section>
+
+        <!-- PAGE CONTENT -->
+        <section>
+            <h4>Product Name</h4>
+
+            <div class="row">
+                <div class="span6">
+                    <p class="muted">away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="span6">
+                    <div class="btn-group pull-right">
+                        <a href="" class="btn btn-info">Buy Now</a>
+                        <a href="" class="btn">Free Trial</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel slide" id="product-carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#product-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#product-carousel" data-slide-to="1"></li>
+                    <li data-target="#product-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="-/img/custom/demo-product-large-1.jpg" alt="Demo Image"/>
+
+                        <div class="carousel-caption">
+                            <h4>A nice demo image</h4>
+                            <p>The Image description 1.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="-/img/custom/demo-product-large-2.jpg" alt="Demo Image"/>
+
+                        <div class="carousel-caption">
+                            <h4>A nice demo image</h4>
+                            <p>The Image description 2.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="-/img/custom/demo-product-large-3.jpg" alt="Demo Image"/>
+
+                        <div class="carousel-caption">
+                            <h4>A nice demo image</h4>
+                            <p>The Image description 3.</p>
+                        </div>
+                    </div>
+                </div>
+
+               <a href="#product-carousel" class="carousel-control left" data-slide="prev">&laquo;</a>
+               <a href="#product-carousel" class="carousel-control right" data-slide="next">&raquo;</a>
+            </div>
+        </section>
+
+        <!-- Q A-->
+        <section>
+            <div class="row">
+                <div class="span6">
+                    <h1>Product Q&A</h1>
+                    <div class="accordion" id="product-qa">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a href="#collapse-1" data-parent="#product-qa" class="accordion-toggle" data-toggle="collapse">Question 1</a>
+                            </div>
+                            <div class="accordion-body collapse in" id="collapse-1">
+                                <div class="accordion-inner">
+                                    This is answer 1
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a href="#collapse-2" data-parent="#product-qa" class="accordion-toggle" data-toggle="collapse">Question 2</a>
+                            </div>
+                            <div class="accordion-body collapse" id="collapse-2">
+                                <div class="accordion-inner">
+                                    This is answer 2
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a href="#collapse-3" data-parent="#product-qa" class="accordion-toggle" data-toggle="collapse">Question 3</a>
+                            </div>
+                            <div class="accordion-body collapse" id="collapse-3">
+                                <div class="accordion-inner">
+                                    This is answer 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span6">
+                    <h4>Product Testimonial</h4>
+
+                    <blockquote>
+                        <p>This is Testimonial</p>
+                        <small>John</small>
+                    </blockquote>
+
+                    <hr/>
+
+                    <blockquote>
+                        <p>This is Testimonial</p>
+                        <small>John</small>
+                    </blockquote>
+
+                    <hr/>
+
+                    <blockquote>
+                        <p>This is Testimonial</p>
+                        <small>John</small>
+                    </blockquote>
+
+                    <hr/>
+
+                </div>
+            </div>
+
+            <hr/>
+
+            <ul class="pager">
+                <li class="previous"><a href="">&larr; Previous</a></li>
+                <li class="next"><a href="">&rarr; Next</a></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <section>
+            <hr/>
+            <p class="lead text-center">Wanna get in touch? Email us at <a href="">office@fake.com</a> </p>
+
+            <hr/>
+            <ul class="inline text-center">
+                <li><strong>Follow us On:</strong></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+            <hr/>
+            <p class="text-center muted">&copy; Copyright 2015 Company Name</p>
+        </section>
+    </div>
+
+    <!--Javascript-->
+    <script src="-/script/jquery-2.1.3.js"></script>
+    <script src="-/script/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('.carousel').carousel({
+                interval: 2000
+            });
+        });
+    </script>
+</body>
+</html>
